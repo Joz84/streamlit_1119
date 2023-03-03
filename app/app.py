@@ -7,6 +7,14 @@ st.markdown("""# This is a header
 ## This is a sub header
 This is text""")
 
+
+spell = st.secrets['spell']
+key = st.secrets.some_magic_api.key
+
+st.write(f"Ma super clé est maintenant visible pour tous : {key}")
+
+
+
 df = pd.DataFrame({
     'first column': list(range(1, 11)),
     'second column': np.arange(10, 101, 10)
